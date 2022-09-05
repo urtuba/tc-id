@@ -1,9 +1,9 @@
-# turkish-id
+# tc-id
 
-`turkish-id` is a package to verify Turkish Citizenship Identity Numbers. You can simply use it as:
+`tc-id` is a package to verify Turkish Citizenship Identity Numbers. You can simply use it as:
 
 ```js
-import { validateTCID } from "turkish-id";
+import { validateTCID } from "tc-id";
 
 const id = "YOUR_TC_ID";
 

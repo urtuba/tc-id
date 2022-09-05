@@ -1,5 +1,5 @@
 {
-  "name": "turkish-id",
+  "name": "tc-id",
   "author": "Samed Kahyaoglu (GitHub: urtuba)",
   "version": "1.0.0",
   "description": "Validate TC ID numbers.",
@@ -16,11 +16,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/urtuba/turkish-id.git"
+    "url": "git+https://github.com/urtuba/tc-id.git"
   },
-  "homepage": "https://github.com/urtuba/turkish-id#readme",
+  "homepage": "https://github.com/urtuba/tc-id#readme",
   "bugs": {
-    "url": "https://github.com/urtuba/turkish-id/issues"
+    "url": "https://github.com/urtuba/tc-id/issues"
   },
   "scripts": {
     "test": "jest --config jestconfig.json",
