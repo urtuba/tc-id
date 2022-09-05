@@ -1,7 +1,12 @@
-class TCIDError extends Error {
-  constructor(message: any) {
+class TCIDValidationError extends Error {
+  constructor(message: string) {
     super(message);
     this.name = "TCIDValidationError";
+    if (typeof Error.captureStackTrace === "function") {
+      Error.captureStackTrace(this, this.constructor);
+    } else {
+      this.stack = new Error(message).stack;
+    }
   }
 }
 
@@ -22,7 +27,7 @@ export const validateTCID = (
 
   // Turkish identity number consists of eleven characters, all digits.
   if (!/^[0-9]{11}$/.test(id)) {
-    throw new TCIDError("TC ID is not valid.");
+    throw new TCIDValidationError("TC ID is not valid.");
   }
 
   // First 9 digits of tc id is used to calculate last 2 fields
@@ -53,11 +58,11 @@ export const validateTCID = (
   const digit11th: string = String((oddSum * 8) % 10);
 
   if (digit10th != id[9]) {
-    throw new TCIDError("TC ID is not valid.");
+    throw new TCIDValidationError("TC ID is not valid.");
   }
 
   if (digit11th != id[10]) {
-    throw new Error("TC ID is not valid.");
+    throw new TCIDValidationError("TC ID is not valid.");
   }
 
   if (returnType && returnType == "number") id = Number(id);
