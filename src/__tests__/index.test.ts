@@ -29,7 +29,8 @@ describe("TC ID Validation", () => {
     try {
       const strResult = validateTCID(id);
     } catch (error: any) {
-      expect(error.message).toBe("TC ID is not valid: " + id);
+      expect(error.name).toBe("TCIDValidationError");
+      expect(error.message).toBe("TC ID is not valid.");
     }
   });
 
@@ -38,7 +39,8 @@ describe("TC ID Validation", () => {
     try {
       const strResult = validateTCID(id);
     } catch (error: any) {
-      expect(error.message).toBe("TC ID is not valid: " + id);
+      expect(error.name).toBe("TCIDValidationError");
+      expect(error.message).toBe("TC ID is not valid.");
     }
   });
 });
