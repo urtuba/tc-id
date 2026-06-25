@@ -3,7 +3,7 @@
 All notable changes to this project are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.1.0]
+## [2.1.0] — 2026-06-26
 
 ### Added
 - `isValidVKN(vkn)` — validates a 10-digit Turkish tax number (Vergi Kimlik No).
@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
   Algorithm verified against published company VKNs (Türk Telekom, TT Mobil, THY).
 
-## [2.0.0]
+## [2.0.0] — 2026-06-26
 
 ### Added
 - `isValidTCID(id)` — boolean validation that never throws (new recommended API).
