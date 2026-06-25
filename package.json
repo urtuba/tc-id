@@ -1,7 +1,7 @@
 {
   "name": "tc-id",
-  "version": "2.0.0",
-  "description": "Validate and generate Turkish Citizenship Identity Numbers (TC Kimlik No). Zero-dependency, typed, ESM + CJS.",
+  "version": "2.1.0",
+  "description": "Validate and generate Turkish identity (TC Kimlik No) and tax (Vergi Kimlik No) numbers. Zero-dependency, typed, ESM + CJS.",
   "author": {
     "name": "Samed Kahyaoglu",
     "email": "samed@luckys.dev",
@@ -52,7 +52,12 @@
     "validation",
     "validator",
     "dogrulama",
-    "generate"
+    "generate",
+    "vkn",
+    "vergi kimlik no",
+    "vergi no",
+    "tax number",
+    "tax id"
   ],
   "repository": {
     "type": "git",
