@@ -1,6 +1,6 @@
 {
   "name": "tc-id",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Validate and generate Turkish identity (TC Kimlik No) and tax (Vergi Kimlik No) numbers. Zero-dependency, typed, ESM + CJS.",
   "author": {
     "name": "Samed Kahyaoglu",

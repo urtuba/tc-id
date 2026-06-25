@@ -3,6 +3,12 @@
 All notable changes to this project are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.1] — 2026-06-26
+
+### Fixed
+- README updated to document `isValidVKN` and `generateVKN` (missing from 2.1.0 publish).
+- CHANGELOG entries now include dates.
+
 ## [2.1.0] — 2026-06-26
 
 ### Added
